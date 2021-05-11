@@ -8,11 +8,11 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
 #Needed to specify my origin link instead of "*" to allow all. Backend errors out otherwise.
-    origins 'http://localhost:8080'
+    origins '*'
 
     resource '*',
       headers: :any,
-      credentials: true,
+      credentials: false,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
 end
