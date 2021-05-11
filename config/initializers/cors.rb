@@ -8,7 +8,7 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
 #Needed to specify my origin link instead of "*" to allow all. Backend errors out otherwise.
-    origins 'https://record-for-artists-front.vercel.app/'
+    origins 'https://record-for-artists-front.vercel.app/', 'https://records-app-api.herokuapp.com/signin'
 
     resource '*',
       headers: :any,
