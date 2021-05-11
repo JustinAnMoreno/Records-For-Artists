@@ -8,7 +8,7 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
 #Needed to specify my origin link instead of "*" to allow all. Backend errors out otherwise.
-    origins 'http://localhost:8080'
+    origins 'https://sei-record-backend.herokuapp.com/'
 
     resource '*',
       headers: :any,
