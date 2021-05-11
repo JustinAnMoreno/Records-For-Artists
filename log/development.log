@@ -1811,3 +1811,689 @@ Processing by Api::V1::ArtistsController#create as HTML
 Completed 201 Created in 38ms (Views: 0.9ms | ActiveRecord: 27.3ms | Allocations: 2378)
 
 
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 05:48:53 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 25ms (Views: 12.5ms | ActiveRecord: 3.6ms | Allocations: 7978)
+
+
+Started DELETE "/signin" for 127.0.0.1 at 2021-05-10 05:48:58 -0400
+Processing by SigninController#destroy as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1665)
+
+
+Started POST "/signin" for 127.0.0.1 at 2021-05-10 05:49:08 -0400
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 213ms (Views: 0.2ms | ActiveRecord: 5.7ms | Allocations: 5559)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 05:49:08 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 05:49:08 -0400
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mArtist Load (2.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 2.2ms | Allocations: 3165)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (1.0ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 38ms (Views: 2.6ms | ActiveRecord: 11.1ms | Allocations: 9351)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 05:49:12 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 05:49:12 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mArtist Load (3.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 3.2ms | Allocations: 1937)
+
+
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.8ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 15ms (Views: 3.3ms | ActiveRecord: 2.9ms | Allocations: 2903)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 05:49:14 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 1147)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 05:55:32 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 9.6ms | Allocations: 3213)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 08:44:52 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 5.6ms | Allocations: 3120)
+
+
+Started DELETE "/api/v1/artists/15" for 127.0.0.1 at 2021-05-10 08:44:56 -0400
+Processing by Api::V1::ArtistsController#destroy as HTML
+  Parameters: {"id"=>"15"}
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started POST "/refresh" for 127.0.0.1 at 2021-05-10 08:44:56 -0400
+Processing by RefreshController#create as HTML
+  Parameters: {"refresh"=>{}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2653)
+
+
+  
+NameError (undefined local variable or method `sesssion' for #<RefreshController:0x00000000006e78>
+Did you mean?  session
+               session):
+  
+app/controllers/refresh_controller.rb:8:in `create'
+Started POST "/signin" for 127.0.0.1 at 2021-05-10 08:45:38 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 218ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 10506)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 08:45:39 -0400
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 08:45:39 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 25ms (Views: 2.2ms | ActiveRecord: 2.8ms | Allocations: 7987)
+
+
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 40ms (Views: 22.5ms | ActiveRecord: 13.8ms | Allocations: 12076)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 08:45:47 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 08:45:47 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mArtist Load (3.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 3.1ms | Allocations: 1815)
+
+
+  [1m[36mRecord Load (3.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 5.0ms | ActiveRecord: 5.8ms | Allocations: 3391)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 08:45:51 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1150)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 08:58:48 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 6.4ms | Allocations: 3130)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 09:06:57 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 17.1ms | ActiveRecord: 7.0ms | Allocations: 3120)
+
+
+Started DELETE "/api/v1/artists/15" for 127.0.0.1 at 2021-05-10 09:07:00 -0400
+Processing by Api::V1::ArtistsController#destroy as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/artists_controller.rb:41:in `set_artist'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."artist_id" = $1[0m  [["artist_id", 15]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mArtist Destroy (1.0ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (22.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+Completed 204 No Content in 41ms (ActiveRecord: 24.4ms | Allocations: 3687)
+
+
+Started POST "/api/v1/artists/" for 127.0.0.1 at 2021-05-10 09:07:16 -0400
+Processing by Api::V1::ArtistsController#create as HTML
+  Parameters: {"artist"=>{"name"=>"Isaiah Rashad "}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mArtist Create (0.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Isaiah Rashad "], ["created_at", "2021-05-10 13:07:16.852430"], ["updated_at", "2021-05-10 13:07:16.852430"]]
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 0.6ms | ActiveRecord: 11.6ms | Allocations: 2959)
+
+
+Started DELETE "/signin" for 127.0.0.1 at 2021-05-10 09:07:56 -0400
+Processing by SigninController#destroy as HTML
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 822)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-05-10 09:08:05 -0400
+Processing by SignupController#create as HTML
+  Parameters: {"email"=>"justinanmoreno@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "signup"=>{"email"=>"justinanmoreno@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :signup[0m
+Completed 422 Unprocessable Entity in 215ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3763)
+
+
+Started POST "/signin" for 127.0.0.1 at 2021-05-10 09:08:12 -0400
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 220ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 1187)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 09:08:12 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 09:08:12 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 2450)
+
+
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 19ms (Views: 10.7ms | ActiveRecord: 7.3ms | Allocations: 4754)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 09:08:15 -0400
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 09:08:15 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mRecord Load (1.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 4.0ms | ActiveRecord: 1.9ms | Allocations: 2359)
+
+
+  [1m[36mArtist Load (2.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.5ms | Allocations: 1904)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 09:08:18 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 1133)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 09:14:42 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 09:14:42 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 6.9ms | Allocations: 5633)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.7ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 27ms (Views: 5.3ms | ActiveRecord: 10.4ms | Allocations: 6594)
+
+
+Started DELETE "/signin" for 127.0.0.1 at 2021-05-10 09:14:44 -0400
+Processing by SigninController#destroy as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started POST "/signin" for 127.0.0.1 at 2021-05-10 10:38:04 -0400
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 231ms (Views: 0.6ms | ActiveRecord: 4.2ms | Allocations: 3013)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 10:38:04 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 10:38:04 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 2.8ms | ActiveRecord: 1.6ms | Allocations: 2396)
+
+
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 8.7ms | Allocations: 4577)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 10:38:09 -0400
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 10:38:09 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1185)
+
+
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 1.9ms | Allocations: 3243)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 10:38:11 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1133)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 10:38:20 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 10:38:20 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+  [1m[36mRecord Load (0.9ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.8ms | Allocations: 1770)
+
+
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 1.5ms | Allocations: 3147)
+
+
+Started DELETE "/signin" for 127.0.0.1 at 2021-05-10 10:38:21 -0400
+Processing by SigninController#destroy as HTML
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 768)
+
+
+Started POST "/signin" for 127.0.0.1 at 2021-05-10 11:00:34 -0400
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 228ms (Views: 0.2ms | ActiveRecord: 7.7ms | Allocations: 3023)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 11:00:35 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 11:00:35 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 0.9ms | Allocations: 2004)
+
+
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 7.9ms | Allocations: 4593)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 11:00:36 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 11:00:36 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 1.2ms | Allocations: 1783)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 2.7ms | ActiveRecord: 0.9ms | Allocations: 2751)
+
+
+Started POST "/api/v1/records/" for 127.0.0.1 at 2021-05-10 11:01:08 -0400
+Processing by Api::V1::RecordsController#create as HTML
+  Parameters: {"record"=>{"title"=>"Whatever", "year"=>"1997", "artist_id"=>19}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/records_controller.rb:20:in `create'
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("title", "year", "artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Whatever"], ["year", "1997"], ["artist_id", 19], ["user_id", 2], ["created_at", "2021-05-10 15:01:08.654535"], ["updated_at", "2021-05-10 15:01:08.654535"]]
+  ↳ app/controllers/api/v1/records_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (22.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/records_controller.rb:20:in `create'
+Completed 201 Created in 55ms (Views: 0.8ms | ActiveRecord: 27.4ms | Allocations: 7663)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 11:01:15 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 1187)
+
+
+Started DELETE "/api/v1/artists/17" for 127.0.0.1 at 2021-05-10 11:01:20 -0400
+Processing by Api::V1::ArtistsController#destroy as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/artists_controller.rb:41:in `set_artist'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."artist_id" = $1[0m  [["artist_id", 17]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mArtist Destroy (0.9ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+Completed 204 No Content in 25ms (ActiveRecord: 14.3ms | Allocations: 3160)
+
+
+Started DELETE "/api/v1/artists/20" for 127.0.0.1 at 2021-05-10 11:01:21 -0400
+Processing by Api::V1::ArtistsController#destroy as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/artists_controller.rb:41:in `set_artist'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."artist_id" = $1[0m  [["artist_id", 20]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mArtist Destroy (0.5ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+Completed 204 No Content in 25ms (ActiveRecord: 12.2ms | Allocations: 3009)
+
+
+Started DELETE "/signin" for 127.0.0.1 at 2021-05-10 11:01:25 -0400
+Processing by SigninController#destroy as HTML
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 795)
+
+
+Started POST "/signin" for 127.0.0.1 at 2021-05-10 11:07:04 -0400
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 242ms (Views: 0.2ms | ActiveRecord: 8.2ms | Allocations: 3147)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-10 11:07:05 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-10 11:07:05 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.2ms | Allocations: 1826)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.6ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 28ms (Views: 3.0ms | ActiveRecord: 11.6ms | Allocations: 4800)
+
+
+Started POST "/api/v1/records/" for 127.0.0.1 at 2021-05-10 11:07:15 -0400
+Processing by Api::V1::RecordsController#create as HTML
+  Parameters: {"record"=>{"title"=>"Great ", "year"=>"2021", "artist_id"=>22}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/records_controller.rb:20:in `create'
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("title", "year", "artist_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Great "], ["year", "2021"], ["artist_id", 22], ["user_id", 2], ["created_at", "2021-05-10 15:07:15.256499"], ["updated_at", "2021-05-10 15:07:15.256499"]]
+  ↳ app/controllers/api/v1/records_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (16.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/records_controller.rb:20:in `create'
+Completed 201 Created in 29ms (Views: 0.8ms | ActiveRecord: 18.4ms | Allocations: 2970)
+
+
+Started GET "/" for 127.0.0.1 at 2021-05-11 08:14:59 -0400
+  [1m[35m (43.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mArtist Load (59.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/home_controller.rb:4:in `index'
+Completed 200 OK in 100ms (Views: 10.6ms | ActiveRecord: 65.4ms | Allocations: 7757)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-11 08:16:23 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:16:23 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 1463)
+
+
+Started POST "/refresh" for 127.0.0.1 at 2021-05-11 08:16:23 -0400
+Processing by RefreshController#create as HTML
+  Parameters: {"refresh"=>{}}
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 249)
+
+
+Started POST "/signin" for 127.0.0.1 at 2021-05-11 08:16:28 -0400
+Processing by SigninController#create as HTML
+  Parameters: {"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]", "signin"=>{"email"=>"jamoreno97@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (70.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamoreno97@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/signin_controller.rb:8:in `create'
+Completed 200 OK in 411ms (Views: 0.2ms | ActiveRecord: 77.2ms | Allocations: 6128)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-11 08:16:28 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:16:28 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 149ms (Views: 138.7ms | ActiveRecord: 10.3ms | Allocations: 7687)
+
+
+  [1m[36mRecord Load (215.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 511ms (Views: 152.4ms | ActiveRecord: 222.3ms | Allocations: 12843)
+
+
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-11 08:18:38 -0400
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:18:38 -0400
+Processing by Api::V1::RecordsController#index as HTML
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1256)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 3.0ms | ActiveRecord: 2.4ms | Allocations: 3285)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:18:40 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 973)
+
+
+Started DELETE "/api/v1/artists/18" for 127.0.0.1 at 2021-05-11 08:18:44 -0400
+Processing by Api::V1::ArtistsController#destroy as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/artists_controller.rb:41:in `set_artist'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."artist_id" = $1[0m  [["artist_id", 18]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mArtist Destroy (52.3ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (28.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+Completed 204 No Content in 96ms (ActiveRecord: 81.5ms | Allocations: 3653)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:18:47 -0400
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-11 08:18:47 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.7ms | Allocations: 1274)
+
+
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (1.8ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 4.3ms | ActiveRecord: 2.7ms | Allocations: 2764)
+
+
+Started PATCH "/api/v1/records/1" for 127.0.0.1 at 2021-05-11 08:18:52 -0400
+Processing by Api::V1::RecordsController#update as HTML
+  Parameters: {"record"=>{"title"=>"Whatever", "year"=>"1997", "artist_id"=>21}, "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1 AND "records"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/records_controller.rb:41:in `set_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/records_controller.rb:28:in `update'
+  [1m[36mRecord Update (1.8ms)[0m  [1m[33mUPDATE "records" SET "artist_id" = $1, "updated_at" = $2 WHERE "records"."id" = $3[0m  [["artist_id", 21], ["updated_at", "2021-05-11 12:18:52.919326"], ["id", 1]]
+  ↳ app/controllers/api/v1/records_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (72.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/records_controller.rb:28:in `update'
+Completed 200 OK in 92ms (Views: 0.9ms | ActiveRecord: 74.7ms | Allocations: 4117)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:18:57 -0400
+Started GET "/api/v1/records" for 127.0.0.1 at 2021-05-11 08:18:57 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 892)
+
+
+Processing by Api::V1::RecordsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `current_user'
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/api/v1/records_controller.rb:10:in `index'
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 0.8ms | Allocations: 1702)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:23:20 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms | Allocations: 892)
+
+
+Started DELETE "/api/v1/artists/19" for 127.0.0.1 at 2021-05-11 08:23:22 -0400
+Processing by Api::V1::ArtistsController#destroy as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/artists_controller.rb:41:in `set_artist'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."artist_id" = $1[0m  [["artist_id", 19]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mArtist Destroy (0.9ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:36:in `destroy'
+Completed 204 No Content in 24ms (ActiveRecord: 14.4ms | Allocations: 3014)
+
+
+Started POST "/api/v1/artists/" for 127.0.0.1 at 2021-05-11 08:23:28 -0400
+Processing by Api::V1::ArtistsController#create as HTML
+  Parameters: {"artist"=>{"name"=>"Beyonce "}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mArtist Create (113.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Beyonce "], ["created_at", "2021-05-11 12:23:28.041743"], ["updated_at", "2021-05-11 12:23:28.041743"]]
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (28.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+Completed 201 Created in 150ms (Views: 0.6ms | ActiveRecord: 141.9ms | Allocations: 2640)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:23:33 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 892)
+
+
+Started POST "/api/v1/artists/" for 127.0.0.1 at 2021-05-11 08:23:36 -0400
+Processing by Api::V1::ArtistsController#create as HTML
+  Parameters: {"artist"=>{"name"=>"Jay-Z"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mArtist Create (0.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Jay-Z"], ["created_at", "2021-05-11 12:23:36.860087"], ["updated_at", "2021-05-11 12:23:36.860087"]]
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+Completed 201 Created in 19ms (Views: 0.7ms | ActiveRecord: 7.9ms | Allocations: 2383)
+
+
+Started GET "/api/v1/artists" for 127.0.0.1 at 2021-05-11 08:23:39 -0400
+Processing by Api::V1::ArtistsController#index as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:10:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 973)
+
+
+Started POST "/api/v1/artists/" for 127.0.0.1 at 2021-05-11 08:23:53 -0400
+Processing by Api::V1::ArtistsController#create as HTML
+  Parameters: {"artist"=>{"name"=>"Curren$y"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Curren$y"], ["created_at", "2021-05-11 12:23:53.640282"], ["updated_at", "2021-05-11 12:23:53.640282"]]
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/artists_controller.rb:20:in `create'
+Completed 201 Created in 13ms (Views: 0.6ms | ActiveRecord: 5.0ms | Allocations: 2382)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046397844150113145)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (43.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046397844150113145)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046397844150113145)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046397844150113145)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
